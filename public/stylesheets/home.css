@@ -1,7 +1,68 @@
 * {
     font-size: 16px;
-
+    font-family: 'Rajdhani', sans-serif;
 }
+
 body {
-    background-color: blueviolet;
+    background-color: #121214;
+    color: white;
+}
+
+.box {
+    width: 400px;
+    height: 500px;
+    background-color:#202024 ;
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 10px;
+    
+}
+
+form {
+   padding-left: 100px;
+   margin-bottom: 30px;
+}
+
+h1 {
+    padding-left: 150px;
+}
+
+img {
+    padding-left: 160px;
+}
+
+h4 {
+    padding-left: 100px;
+}
+small {
+    padding-left: 150px;
+}
+
+input { 
+    margin-bottom: 20px;
+    height: 40px;
+    border-style: none;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+button {
+    height: 40px;
+    margin-left: 20px;
+    width: 120px;
+    background-color:  #008CBA;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+}
+button:hover {
+    background-color:#3197b9;
+}
+button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }

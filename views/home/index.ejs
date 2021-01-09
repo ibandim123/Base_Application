@@ -4,14 +4,20 @@
         <meta charset="utf-8">
         <title>Página Principal</title>
         <link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>DataCenter</h1>
-            <h4>Welcome! Enjoy it!</h4>
+           
         </header>
-        <section>
+        <section class="box">
+
+            <h1>DataCenter</h1><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Archlinux-icon-crystal-64.svg/1024px-Archlinux-icon-crystal-64.svg.png" height="50px" width="50px">
+            
+            <h4>WELCOME!</h4> 
+
             <form action="/join" method="post">
                 <input type="text" name="user[nome]"
                 placeholder="Name">
@@ -19,11 +25,12 @@
                 <input type="password" name="user[password]"
                 placeholder="Password">
                 <br>
-                <button type="submit">Entrar</button>
+                <button type="submit">Entrar</button>          
             </form>
+             <small>DataCenter</small>
         </section>
             <footer>
-                <small>DataCenter</small>
+               
             </footer>
     </body>
 </html>
