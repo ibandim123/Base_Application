@@ -13,14 +13,14 @@
         </header>
         <section class="box">
           
-          <form>
+          <form action="/profileCreate" method="POST" >
               <fieldset>
                   <legend>Data Information</legend>
-                  <input name="name" type="text" placeholder="Name">
-                  <input name="dataBirth" type="date" placeholder="Birth date"><br>
-                  <input name="gender" type="radio" value="male" checked>male<br>
-                  <input name="gender" type="radio" value="female" >female<br>                  
-                  <input name="phone" type="tel" placeholder="phone">
+                  <input name="profileData[name]" type="text" value="" placeholder="Name">
+                  <input name="profileData[dataBirth]" type="date" placeholder="Birth date"><br>
+                  <input name="profileData[gender]" type="radio" value="male" checked>male<br>
+                  <input name="profileData[gender]" type="radio" value="female" >female<br>                  
+                  <input name="profileData[phone]" type="tel" placeholder="phone">
                   <button type="submit"> Send </button>
               </fieldset>
           </form>
