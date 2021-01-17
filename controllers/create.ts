@@ -6,9 +6,13 @@ module.exports = ( app ) => {
         },
         createProfile(req,res) {
             //Gravar as informações do form
-            const { profileData  } = req.body;
+            const { profileData } = req.body;
 
-            
+            //conexão
+            let userProfile = require('../models/profile.ts');
+
+            //Salvar dados
+            res.send(profileData)
             console.log(profileData)
            
         }

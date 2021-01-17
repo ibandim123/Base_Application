@@ -11,7 +11,7 @@ const mongoose = require('mongoose')
 const app = express();
 
 
-mongoose.connect('', {
+mongoose.connect('mongodb+srv://ibandim123:123@cluster0.nrs37.mongodb.net/Profile?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(()=>{
@@ -27,7 +27,7 @@ app.set('view engine', 'ejs');
 app.use(cookieParser('datacenter'));
 app.use(expressSession());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extend:true}));
 
 app.use(express.static(path.join(__dirname,'public')));
 

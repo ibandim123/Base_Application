@@ -1,3 +1,4 @@
+/*TAGS*/
 * {
     font-size: 16px;
     font-family: 'Rajdhani', sans-serif;
@@ -8,15 +9,6 @@ body {
     color: white;
 }
 
-.box {
-    width: 400px;
-    height: 500px;
-    background-color:#202024 ;
-    margin-top: 60px;
-    margin-left: 30px;
-    padding: 10px;
-    
-}
 
 form {
    padding-left: 100px;
@@ -66,6 +58,18 @@ button:focus {
     border: 0 none;
     outline: 0;
 }
+/*CLASS*/
+.box {
+    width: 400px;
+    height: 500px;
+    background-color:#202024 ;
+    margin-top: 60px;
+    margin-left: 30px;
+    padding: 10px;
+    
+}
+
+
 
 @media (min-width: 1100px){ 
     .box {

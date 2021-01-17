@@ -14,15 +14,19 @@
         <section class="box">
           
           <form action="/profileCreate" method="POST" >
-              <fieldset>
-                  <legend>Data Information</legend>
-                  <input name="profileData[name]" type="text" value="" placeholder="Name">
+                                
+                  <input name="profileData[name]" type="text" value="" placeholder="Name" autocomplete="off">                  
+                  
                   <input name="profileData[dataBirth]" type="date" placeholder="Birth date"><br>
-                  <input name="profileData[gender]" type="radio" value="male" checked>male<br>
-                  <input name="profileData[gender]" type="radio" value="female" >female<br>                  
+                    male<br>
+                  <input name="profileData[gender]" type="radio" value="male" checked>
+                    female<br>
+                  <input name="profileData[gender]" type="radio" value="female" >                  
+                  
                   <input name="profileData[phone]" type="tel" placeholder="phone">
+                 
                   <button type="submit"> Send </button>
-              </fieldset>
+              
           </form>
         </section>
             <footer>

@@ -3,4 +3,5 @@ module.exports = ( app ) => {
     app.get('/create', create.index)
 
     app.post('/profileCreate', create.createProfile);
+    
 };
