@@ -1,20 +1,30 @@
+import { create } from "ts-node";
+
+ //Importar os models
+const profile = require('../models/profile')
 
 module.exports = ( app ) => {
     const createdController = {
         index(req, res) {
             res.render('create/index',)
         },
-        createProfile(req,res) {
+        async createProfile(req,res) {
             //Gravar as informações do form
-            const { profileData } = req.body;
+           const profiles = [];
+            try {
+               const user = await profile.create(req.body)
 
-            //conexão
-            let userProfile = require('../models/profile.ts');
+               return res.send({ user })
 
-            //Salvar dados
-            res.send(profileData)
-            console.log(profileData)
+
+            } catch (err) {
+                return res.status(400).send({error:"Não enviou..."})
+            }
+            //const { profileData } = req.body;
            
+          
+            //Salvar dados
+            //console.log()
         }
     };
     return createdController
