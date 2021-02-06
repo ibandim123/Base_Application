@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 
 const app = express();
 
-mongoose.connect('mongodb+srv://ibandim123:123@cluster0.nrs37.mongodb.net/Profile?retryWrites=true&w=majority', {
+mongoose.connect('****', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(()=>{
